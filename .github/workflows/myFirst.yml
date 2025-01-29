@@ -1,8 +1,9 @@
-name: test 
+name: test
 on: workflow_dispatch
 
-jobs: 
-  runs-on: ubuntu-latest
-  steps: 
-    -name: printing
-    run: echo "Hello"
+jobs:
+  test-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: printing
+        run: echo "Hello"
